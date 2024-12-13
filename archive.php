@@ -20,15 +20,7 @@
                         <?php get_template_part( 'template-parts/loop', 'post' ); ?>
                         <?php endwhile; ?>
                         <?php endif; ?>
-                        <nav class="navigation pagination" role="navigation" aria-label="投稿">
-                            <div class="nav-links">
-                                <a class="prev page-numbers" href="#">&lt;<span class="sr-only">前</span></a>
-                                <a class="page-numbers" href="#">1</a>
-                                <span aria-current="page" class="page-numbers current">2</span>
-                                <a class="page-numbers" href="#">3</a>
-                                <a class="next page-numbers" href="#"> <span class="sr-only">次</span>&gt;</a>
-                            </div>
-                        </nav>
+                        <?php get_template_part( 'template-parts/parts','pagination' ); ?>
                     </main>
                 </div>
                 <?php get_sidebar(  ); ?>
