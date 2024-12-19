@@ -14,7 +14,6 @@
                                     <?php the_title(  );?>
                                 </h1>
                                 <div class="content-Meta">
-                                    <!-- <a href="#">キャンペーン</a> -->
                                      <?php the_category( ',' ); ?>
                                     <?php
                                     $neko_post_year = get_the_date('Y');
@@ -34,19 +33,15 @@
                                 <?php the_content(  ); ?>
                             </div>
                             <footer class="content-Footer">
-                                <!-- <ul class="content-Tags" aria-label="タグ">
-                                    <li><a href="#">ご予約</a></li>
-                                    <li><a href="#">雨の日</a></li>
-                                </ul> -->
                                 <?php
                                 the_tags( ' <ul class="content-Tags" aria-label="タグ"><li> ', '</li><li>', ' </li></ul> ' );
                                 ?>
                                 <nav class="content-Nav" aria-label="前後の記事">
                                     <div class="content-Nav_Prev">
-                                        &lt; <a href="#">前のページタイトル</a>
+                                        <?php previous_post_link( '&lt;%link' ); ?>
                                     </div>
                                     <div class="content-Nav_Next">
-                                        <a href="#">次のページタイトル</a> &gt;
+                                        <?php next_post_link( '%link &gt;' ); ?>
                                     </div>
                                 </nav>
                             </footer>

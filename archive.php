@@ -19,8 +19,8 @@
                         ?>
                         <?php get_template_part( 'template-parts/loop', 'post' ); ?>
                         <?php endwhile; ?>
-                        <?php endif; ?>
                         <?php get_template_part( 'template-parts/parts','pagination' ); ?>
+                        <?php endif; ?>
                     </main>
                 </div>
                 <?php get_sidebar(  ); ?>
