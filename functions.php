@@ -52,7 +52,7 @@ function neko_widgets_init(){
         'id'=>'footer-widget-area',
         'description'=>'フッターのサイドバー',
         'before_widget'=>'<div id="%1$s" class="%2$s">',
-        'after_widget'=>'<?div>',
+        'after_widget'=>'</div>',
     )
     );
 }

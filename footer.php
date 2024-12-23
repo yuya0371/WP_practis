@@ -2,17 +2,17 @@
             <div class="footer-Widgets">
                 <div class="container-fluid">
                     <div class="row">
-                        <?php if(is_active_sidebar( 'footer-widget-area' )): ?>
+                        <?php if ( is_active_sidebar( 'footer-widget-area' ) ) : ?>
                             <div class="col-md-4">
                                 <?php dynamic_sidebar( 'footer-widget-area' ); ?>
                             </div>
                         <?php endif; ?>
-                        <?php if(is_active_sidebar( 'footer-widget-area-2' )): ?>
+                        <?php if ( is_active_sidebar( 'footer-widget-area-2' ) ) : ?>
                             <div class="col-md-4">
                                 <?php dynamic_sidebar( 'footer-widget-area-2' ); ?>
                             </div>
                         <?php endif; ?>
-                        <?php if(is_active_sidebar( 'footer-widget-area-3' )): ?>
+                        <?php if ( is_active_sidebar( 'footer-widget-area-3' ) ) : ?>
                             <div class="col-md-4">
                                 <?php dynamic_sidebar( 'footer-widget-area-3' ); ?>
                             </div>
@@ -25,7 +25,7 @@
             </p>
         </footer>
     </div>
-    <?php wp_footer(  ); ?>
+    <?php wp_footer(); ?>
 </body>
 
 </html>
